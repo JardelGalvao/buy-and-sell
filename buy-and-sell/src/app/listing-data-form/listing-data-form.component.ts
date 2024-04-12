@@ -16,6 +16,7 @@ export class ListingDataFormComponent {
   name: string = '';
   description: string = '';
   price: number = 0;
+  view: number = 0;
 
   @Output() onSubmit = new EventEmitter<Listing>();
 
@@ -35,6 +36,7 @@ export class ListingDataFormComponent {
       name: this.name,
       description: this.description,
       price: Number(this.price),
+      views: this.view,
     });
   }
 }

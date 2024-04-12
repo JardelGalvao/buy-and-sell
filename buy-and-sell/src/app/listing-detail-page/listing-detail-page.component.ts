@@ -19,6 +19,7 @@ export class ListingDetailPageComponent {
       name: '',
       description: '',
       price: 0,
+      views: 0,
     }
   }
 
