@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { MyListingsPageComponent } from './my-listings-page.component';
 
 describe('MyListingsPageComponent', () => {
