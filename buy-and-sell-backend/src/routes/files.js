@@ -12,7 +12,7 @@ export const filesRoutes = angularRoutePaths.map(path => ({
     method: 'GET',
     path,
     handler: (req, h) => {
-        return h.file('dist/buy-and-sell/index.html');
+        return h.file('dist/buy-and-sell/browser/index.html');
     }
 }))
 
@@ -21,7 +21,7 @@ export const staticFilesRoute = {
     path: '/{params*}',
     handler: {
         directory: {
-            path: 'dist/buy-and-sell',
+            path: 'dist/buy-and-sell/browser',
         }
     }
 }

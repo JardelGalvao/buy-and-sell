@@ -14,7 +14,7 @@ var db = exports.db = {
       user: process.env.DB_USER,
       password: process.env.DB_PASS,
       database: process.env.DB_NAME,
-      socketPath: process.env.DB_SOCKET
+      socketPath: "/cloudsql/buy-and-sell-7f9b2:us-central1:buy-and-sell-db"
     });
     connection.connect();
   },

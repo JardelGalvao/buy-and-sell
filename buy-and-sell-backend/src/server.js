@@ -14,8 +14,6 @@ admin.initializeApp({
 let server;
 
 const start = async () => {
-   
-
     server = Hapi.server({
         port: 8080,
         host: '0.0.0.0',
@@ -25,6 +23,7 @@ const start = async () => {
 
     routes.forEach(route => server.route(route));
 
+    db.connect();
     await server.start();
     console.log(`Server is listening on ${server.info.uri}`);
 }

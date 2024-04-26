@@ -33,11 +33,12 @@ var start = /*#__PURE__*/function () {
           _routes["default"].forEach(function (route) {
             return server.route(route);
           });
-          _context.next = 6;
+          _database.db.connect();
+          _context.next = 7;
           return server.start();
-        case 6:
-          console.log("Server is listening on ".concat(server.info.uri));
         case 7:
+          console.log("Server is listening on ".concat(server.info.uri));
+        case 8:
         case "end":
           return _context.stop();
       }

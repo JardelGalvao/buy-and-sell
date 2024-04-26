@@ -10,7 +10,7 @@ var filesRoutes = exports.filesRoutes = angularRoutePaths.map(function (path) {
     method: 'GET',
     path: path,
     handler: function handler(req, h) {
-      return h.file('dist/buy-and-sell/index.html');
+      return h.file('dist/buy-and-sell/browser/index.html');
     }
   };
 });
@@ -19,7 +19,7 @@ var staticFilesRoute = exports.staticFilesRoute = {
   path: '/{params*}',
   handler: {
     directory: {
-      path: 'dist/buy-and-sell'
+      path: 'dist/buy-and-sell/browser'
     }
   }
 };
